@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+/* frequently used color:
+    background-color: #686de9;
+    background-color: #9f68e0;
+    border:1px solid #999
+    background-color:#eee;
+    background-color: #9fa4a8;
+*/
+
+/*  font-color:
+    color:#555;
+*/
+/* shadows
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.1);
+*/
+
+/* icon:
+     <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>   v 
+          <i class="fas fa-times"></i>          x
+     </button>
+*/
+/*
+   button tag specify width height display:flex, then set border-radius=50%, can become an around button 
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2b88f0;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h3 {
+  color: #fff;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+  border: 0;
+}
+
+#textarea {
+  border: 1px solid black;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+.tag {
+  background-color: #f0932b;
+  color: #fff;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin: 0 5px 10px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #273c75;
+}
