@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* frequently used color:
+    background-color: #686de9;
+    background-color: #9f68e0;
+    border:1px solid #999
+    background-color:#eee;
+    background-color: #9fa4a8;
+    background-color:#2b88f0;
+    background-color: #f0932b;
+    background-color:#273c75 ;
+    background-image:linear-gradient(to bottom, #eafbff 0%,#eafbff 50%, #5290f9 50%, #5290f9 100%)
+*/
+
+/*  font-color:
+    color:#555;
+*/
+/* shadows
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0, 0.3);
+
+*/
+
+/* icon:
+     <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>   v 
+          <i class="fas fa-times"></i>          x
+     </button>
+*/
+/*
+   button tag specify width height display:flex, then set border-radius=50%, can become an around button 
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #8344ad;
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //gap: 40px;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
