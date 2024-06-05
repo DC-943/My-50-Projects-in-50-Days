@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* frequently used color:
+    background-color: #686de9;
+    background-color: #9f68e0;
+    background-color: #8344ad:
+    border:1px solid  #999
+    background-color: #eee;
+    background-color: #9fa4a8;
+    background-color :#2b88f0;
+    background-color:#3494e4;
+    background-color:#144fc6;
+    background-color: #f0932b;
+    background-color: #273c75 ;
+    background-color: #fc0; CBA color
+    background-color: #1e1e1e; CBA color
+    background-image:linear-gradient(to bottom, #eafbff 0%,#eafbff 50%, #5290f9 50%, #5290f9 100%)
+*/
+
+/*  font-color:
+    color:#555;
+*/
+/* shadows
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow:1px 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0, 0.3);
+
+*/
+
+/* icon:
+     <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>   v 
+          <i class="fas fa-times"></i>          x
+     </button>
+*/
+/*
+   button tag specify width height display:flex, then set border-radius=50%, can become an around button 
+*/
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color:var(--primary-color)
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header{
+padding:1rem;
+display:flex;
+justify-content:flex-end;
+background-color:var(--secondary-color);
+}
+
+.search{
+background-color:transparent;
+border:2px solid var(--primary-color);
+border-radius:50px;
+font-family: inherit;
+font-size:1rem;
+padding:0.5rem 1rem;
+color:#fff;
+}
+
+.search::placeholder{
+ color:#7378c5;
+}
+.search:focus{
+  outline:none;
+  cursor:pointer;
+  background-color:var(--primary-color);
+}
+
+main{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.movie{
+ width:300px;
+ margin:1rem;
+ background-color: var(--secondary-color);
+ box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+ position:relative;
+ overflow:hidden;
+ border-radius:3px;
+
+}
+
+.movie img{
+ width: 100%;
+}
+
+.movie-info{
+  color:#eee;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing:0.5px;
+}
+.movie-info h3{
+  margin-top:0;
+}
+.movie-info span{
+  background-color: var(--primary-color);
+  padding:0.25rem, 0.5rem;
+  border-radius:3px;
+  font-weight:bold;
+}
+
+.movie-info span .green{
+  color:lightgreen;
+}
+
+.movie-info span .orange{
+  color:orange;
+}
+.movie-info span .red{
+  color:red;
+}
+
+.overview{
+background-color:#fff;
+padding:2rem;
+position:absolute;
+left:0;
+bottom:0;
+right:0;
+max-height:100%;
+transform:translateY(101%);
+transition:transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+ transform:translateY(0);
+}
