@@ -44,14 +44,19 @@ function showMovies(movies) {
   })
 }
 function getClassByRate(vote) {
-  switch (vote) {
+  console.log(" vote is:", typeof vote, vote)
+
+  switch (true) {
     case vote >= 8:
       return "green"
+      console.log("green vote is:", vote)
       break
     case vote >= 5:
       return "orange"
+      console.log("orange vote is:", vote)
       break
     default:
+      console.log("red vote is:", vote)
       return "red"
   }
 }

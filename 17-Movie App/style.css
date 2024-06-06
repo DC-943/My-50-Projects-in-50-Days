@@ -118,14 +118,14 @@ main{
   font-weight:bold;
 }
 
-.movie-info span .green{
+.movie-info span.green{
   color:lightgreen;
 }
 
-.movie-info span .orange{
+.movie-info span.orange{
   color:orange;
 }
-.movie-info span .red{
+.movie-info span.red{
   color:red;
 }
 
